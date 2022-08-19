@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+    background-color: #f3f5fc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+header object {
+    height: 48px;
+    margin: 40px 0 0 84px;
+    width: 31.09px;
+}
+
+article {
+    margin: 70px 0 0 240px;
+}
+
+.main-section__input textarea {
+    background-color: transparent;
+    border: 0;
+    color: #0a3871;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    height: 400px;
+    line-height: 150%;
+    outline: none;
+    resize: none;
+    width: 700px;
+}
+
+.main-section__input textarea::placeholder {
+    color: #0a3871;
+}
+
+.main-section__options {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    justify-content: flex-end;
+}
+
+.main-section__options p {
+    align-items: center;
+    color: #495057;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+.main-section__options p object {
+    margin-right: 5px;
+}
+
+.section-options__buttons button {
+    border-radius: 24px;
+    flex: none;
+    flex-grow: 1;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 67px;
+    line-height: 19px;
+    order: 0;
+    width: 328px;
+}
+
+.section-options__buttons button:hover {
+    cursor: pointer;
+}
+
+.section-options__buttons button:first-child {
+    background-color: #0a3871;
+    color: #ffffff;
+    margin-right: 24px;
+}
+
+.section-options__buttons button:last-child {
+    background-color: #d8dfe8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+
+aside {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    height: 880px;
+    justify-content: center;
+    margin: 40px 40px 40px 0;
+    width: 500px;
+}
+
+aside object {
+    width: 336px;
+}
+
+aside h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0 32px 16px 32px;
+    text-align: center;
+}
+
+aside p {
+    color: #495057;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0 32px;
+    text-align: center;
+}
+
+#btn-copy {
+    background-color: #ffffff;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    display: none;
+    flex: none;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 67px;
+    line-height: 19px;
+    margin-top: 10px;
+    order: 0;
+    width: 328px;
+}
+
+footer {
+    color: #495057;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+}
+
+/*****MEDIA QUERYS******/
+
+@media screen and (max-width: 768px) {
+    body {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header object {
+        height: 48px;
+        margin-left: 40px;
+        width: 31.09px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    article {
+        margin: 150px 0 0 40px;
+    }
+
+    .main-section__input textarea {
+        width: 688px;
+    }
+
+    .main-section__options {
+        height: 250px;
+    }
+
+    aside {
+        height: 100%;
+        margin: 30px 40px;
+        padding: 15px 0;
+        width: 90%;
+    }
+
+    aside object {
+        display: none;
+    }
+
+    #btn-copy {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        margin: 0;
+    }
+
+    header object {
+        margin-left: 16px;
+    }
+
+    article {
+        margin: 152px 16px 0 16px;
+    }
+
+    .main-section__input textarea {
+        width: 343px;
+    }
+
+    .section-options__buttons button {
+        width: 343px;
+    }
+
+    .section-options__buttons button:first-child {
+        margin: 0 0 16px 0;
+    }
+
+    aside {
+        height: 100%;
+        margin: 30px 24px 10px 24px;
+        padding: 15px 0;
+        width: 327px;
+    }
+
+    aside h2 {
+        font-size: 20px;
+    }
+
+    #btn-copy {
+        width: 280px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <object data="src/img/a.svg" type="image/svg+xml"></object>
+            </header>
+            <article>
+                <section class="main-section__input">
+                    <textarea
+                        name=""
+                        id="inputText"
+                        cols="30"
+                        rows="10"
+                        placeholder="Ingrese el texto aqui"
+                    ></textarea>
+                </section>
+                <section class="main-section__options">
+                    <p>
+                        <object
+                            data="src/img/info.svg"
+                            type="image/svg+xml"
+                        ></object>
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                    <section class="section-options__buttons">
+                        <button href="#" id="btn-encrypt">Encriptar</button>
+                        <button href="#" id="btn-decrypt">Desencriptar</button>
+                    </section>
+                </section>
+            </article>
+        </main>
+        <aside>
+            <object
+                data="src/img/Muñeco.svg"
+                type="image/svg+xml"
+                id="imgDoll"
+            ></object>
+            <section>
+                <h2 id="titleText">Ningún mensaje fue encontrado</h2>
+                <p id="paragraph">
+                    Ingrese el texto que desees encriptar o desencriptar.
+                </p>
+            </section>
+            <button id="btn-copy">Copiar!</button>
+        </aside>
+        <footer>
+            <p>&copy; DaniDev - 2022</p>
+        </footer>
+        <script src="js/code.js"></script>
+    </body>
+</html>
